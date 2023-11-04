@@ -1,5 +1,26 @@
+
+
 .header_main{
-    width: 100%;
-    height: 15vh;
-    background-color: bisque;
+    display: flex;
 }
+
+/** Desktop 사양*/
+@media screen and (min-width : 1024px){
+    .header_main{
+        width: 100%;
+        height: 80px;
+        min-width: 80%;
+        background-color: bisque;
+        
+    }
+}
+
+/** Tablet 사양*/
+@media screen and (max-width : 1023px){
+    .header_main{
+        width: 100%;
+        height: 80px;
+        background-color: blue;
+    }
+}
+

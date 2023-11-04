@@ -9,7 +9,7 @@ function TabBox(){
     const [tabNum, setTabNum] = useRecoilState(useTabNum);
 
     return(
-        <div className={style.main}>
+        <div className={style.tabBox_main}>
             안녕하세요 {tabNum}
             <button onClick={()=>{
                 setTabNum(tabNum+1);
