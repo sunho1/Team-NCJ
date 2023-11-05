@@ -2,6 +2,7 @@
 
 .header_main{
     display: flex;
+    align-items: center;
 }
 
 /** Desktop 사양*/

@@ -1,4 +1,22 @@
 .tabBox_main{
-    width: 100%;
+    width: 60%;
     height: 100%;
+    padding-left: 20%;
+    /* margin-left: 20%; */
+    background-color: rgb(84, 244, 193);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.tabBox_item{
+    width: 180px;
+    height: 80%;
+    font-size: large;
+    /* padding-bottom: 1%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
 }
