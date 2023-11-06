@@ -12,12 +12,11 @@ function TabBox(){
 
     return(
         <div className={style.tabBox_main}>
-            {/* 안녕하세요 {tabNum}
-            <button onClick={()=>{
-                setTabNum(tabNum+1);
-            }}>눌러볼까요</button> */}
+            {tabNum}
             {tabArr.map((tab, idx)=>{
-                return(<div className={style.tabBox_item} key={idx}>
+                return(<div className={style.tabBox_item} key={idx} onClick={()=>{
+                    setTabNum(idx);
+                }}>
                     {tab}
                 </div>)
             })}
