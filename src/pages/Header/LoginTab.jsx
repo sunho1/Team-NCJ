@@ -7,7 +7,15 @@ function LoginTab(){
 
     return(
         <div className={style.login_main}>
-            gd
+            <div className={style.login_logIn}>
+
+            </div>
+            <div className={style.login_logOut}>
+
+            </div>
+            <div className={style.login_signUp}>
+
+            </div>
         </div>
     )
 }
