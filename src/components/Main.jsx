@@ -1,11 +1,24 @@
 import React from "react";
+import { useRecoilState } from "recoil";
+import {useTabNum, useRenderCnt} from '../store/atom'
+import style from './Main.module.css'
+import SeasonGraph from "../pages/main/SeasonGraph";
+import Stat from "../pages/main/Stat";
 
-function main(){
+
+function Main(){
+    const [tabNum, setTabNum] = useRecoilState(useTabNum);
+    const [renderCnt , setRenderCnt] = useRecoilState(useRenderCnt);
+
+
+
+
     return(
-        <div>
-            main 입니다
+        <div className={style.main_main}>
+            렌더링 횟수 : {renderCnt}
+            {tabNum ==0? <SeasonGraph/>:<Stat/>}
         </div>
     )
 }
 
-export default main;
+export default Main;

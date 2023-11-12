@@ -7,12 +7,11 @@ function TabBox(){
 
 
     const [tabNum, setTabNum] = useRecoilState(useTabNum);
-    const [tabArr, setTabArr] = useState(['하나','둘','셋']);
+    const [tabArr, setTabArr] = useState(['그래프','스탯','빈칸3']);
     
 
     return(
         <div className={style.tabBox_main}>
-            {tabNum}
             {tabArr.map((tab, idx)=>{
                 return(<div className={style.tabBox_item} key={idx} onClick={()=>{
                     setTabNum(idx);
