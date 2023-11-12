@@ -10,13 +10,11 @@ function Main(){
     const [tabNum, setTabNum] = useRecoilState(useTabNum);
     const [renderCnt , setRenderCnt] = useRecoilState(useRenderCnt);
 
-
-
-
     return(
         <div className={style.main_main}>
             렌더링 횟수 : {renderCnt}
-            {tabNum ==0? <SeasonGraph/>:<Stat/>}
+            {tabNum == 0 && <SeasonGraph/>}
+            {tabNum ==1 && <Stat/>}
         </div>
     )
 }
